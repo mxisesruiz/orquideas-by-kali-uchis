@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0;}
+
+body {background-image:url("../IMG/fondoorquideas.jpg"); background-repeat: no-repeat; background-size:cover; background-attachment: fixed;font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; cursor: url("../IMG/Cursor.png"), auto;}
+.wrapper{background-color: rgba(215,98,164,0.70); width: 1000px; margin-left: auto; margin-right: auto; text-align: center; padding: 30px; box-sizing: border-box;}
+
+.footer {background-color:rgba(213,183,203,1.00);width: 1000px;height: 60px; color: black; line-height: 60px; margin-left: auto; margin-right: auto; text-align: center;}
+
+.nav{background-color: rgba(192,42,145,1.00); width: 1000px; height:170px;text-align: center;color: white; margin-left: auto; margin-right: auto;}
+
+.nav ul {list-style-type: none;}
+
+.nav li {width: 166px;float: left;}
+
+.secciones {background-color: rgba(255,255,255,0.89);width: 700px; padding: 70px; margin:50px auto;}
+
+.secciones p {text-align: center;font-family: Montserrat;} 
+
+h2 {color: rgba(173,36,187,0.83); font-family: romantica;}
+
+@font-face {src:url("../SRC/romance.ttf"); font-family:romantica}
+/* font face nos permite colocar fuentes de fantasia descargadas, o sea cualquier fuente, y con el font family le asignas un nombre para utilizarla */
+
+a{ text-decoration:none; color: white; }
+
+a:hover {color:rgba(0,0,0,1.00);}
+
+.boton { position:fixed; right:30px; top:500px; }
+
+.orqm {position:absolute; right:180px; bottom:85px;}
+
+/*transformaciones*/
+.orqm:hover {transform: translateX(50px);transition:linear 3s;}
+/* la transición linear no tiene flexibilización, es decir, la velocidad es contante */
+
+.mpl {position:absolute; left:100px; bottom:-400px;}
+
+.mpl:hover {transform: rotate(360deg);transition: ease-in 4s;}
+
+/* ease-in dice que inicia la tranformación lentamente y termina a toda velocidad*/
+
+
+.pi {position:absolute; right:350px; bottom:-1050px;}
+
+.pi:hover {transform: skew(-10deg);transition: ease-out 4s;}
+
+/* ease-out inicia la transformación a toda velocidad y termina lentamente*/
+
+
+.d {position:absolute; left:220px; bottom:-1700px;}
+
+.d:hover {transform: rotate(310deg) scale(1.40);transition: ease-in-out 4s;}
+
+/* ease-in-out comenzará lento, luego rapido y termina lento*/
+
+
+.tm {position:absolute; right:250px; bottom:-2350px;}
+
+.tm:hover {transform: translate(80px,160px);transition: ease-in-out 3s;}
+
+/* las tranformaciones de rotate y skew se manejan en grados, mientras que translate en px*/
+
+
+.per {position:absolute; left:300px; bottom:-3200px;}
+
+.per:hover {transform: translateX(30px) scale(1.05);transition:linear 2s;}
